@@ -1,0 +1,33 @@
+﻿@model Evidence.Models.Insurance
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h3 class="pt-3">Vytvořte pojištění</h3>
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NameInsurance" class="control-label"></label>
+                <input asp-for="NameInsurance" class="form-control" />
+                <span asp-validation-for="NameInsurance" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="control-label">Popis pojištění</label>
+                <textarea asp-for="Description" class="form-control" id="Description" rows="6"></textarea>
+            </div>
+            <div class="form-group pt-3">
+                <input type="submit" value="Vytvořit" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Zpět na seznam</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
