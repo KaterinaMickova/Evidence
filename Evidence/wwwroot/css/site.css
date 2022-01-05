@@ -34,31 +34,6 @@ html {
         font-size: 16px;
         
     }
-    .nav-link
-    {
-        display: inline-block
-    }
-}
-@media (max-width: 768px) {
-    .nadpis {
-        font-size: 60px;
-    }
-}
-@media (max-width: 538px) {
-        .nadpis {
-            font-size: 50px;
-        }
-    }
-
-@media (max-width: 460px) {
-    .nadpis {
-        font-size: 40px;
-    }
-}
-@media (max-width: 379px) {
-    .nadpis {
-        font-size: 32px;
-    }
 }
 
 .border-bottom {
